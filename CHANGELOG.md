@@ -12,11 +12,11 @@ Changes to the catalog, newest first: corrections this archive made, and changes
   - `DOW-UAP-D027`: titled October 2023; the report covers June 6-7, 2024 over the Gulf of Oman.
   - `DOW-UAP-D004`, `D005`, `D014`: war.gov's titles name the Arabian Gulf or Iraq; the reports' grid references put them in the Mediterranean and off the Syrian coast.
   - FBI September 2023 sighting, serials 003 to 005: war.gov links each record to a different serial's interview.
-  - Incident dates that were really the date of the document, and records that are documents rather than incident reports.
+  - Incident dates that were really the date of the document, and records that are documents rather than incident reports (`no_incident`).
 - **Locations:** records located only by a region or command ("Western United States", AFRICOM) are no longer placed on a made-up exact point. Nine events at sea that were pinned on land now sit at the grid squares in their reports, and places read from document text are filtered more strictly.
 - **Topics** now come from war.gov's title and description, the document text and the location, never from machine-written text.
 - **Machine summaries withdrawn:** `machine_summary` is null while summaries are rewritten from each record's full text and checked, claim by claim, against its pages.
-- **New fields:** `file_url` (this archive's copy of the file), `corrected_by_archive`, `archive_note`.
+- **New fields:** `file_url` (this archive's copy of the file), `corrected_by_archive`, `archive_note`, `lat`, `lng` and `pin_precision` (how exact the location is: `point` and `city` are named places, everything else is approximate), `no_incident` (papers and memos that report no single incident), and `featured_in_release` (the release in which war.gov featured the record; recorded from Release 05 on).
 - **Access:** from January 4, 2027 the bulk files need a free key: https://declassifieduap.org/developers
 
 ## 2026-11-20
