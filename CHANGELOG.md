@@ -2,6 +2,15 @@
 
 Changes to the catalog, newest first: corrections this archive made, and changes war.gov made to its releases. Each corrected record also carries `corrected_by_archive` and `archive_note` in the data.
 
+## 2026-11-25
+
+- **Machine summaries are back, checked.** Every summary was rewritten from its record's full text (or, for videos, images and empty scans, from war.gov's title and description only, which `machine_summary_basis` says), then checked claim by claim against the pages it cites. 487 records have one; 34 have none (`machine_summary` null) because no draft passed the check. A second, independent read of a sample found the remaining weak spots (audio heard wrong by speech recognition, hedges dropped in very long documents); those 40 summaries were checked again one by one against the pages, and 19 of them corrected, before release. A summary is still not government text: cite the document.
+- **Word counts:** `words` no longer counts the page markers in the OCR text. The archive holds 3,212,958 words of text (it said 3,265,966).
+- **CSV:** the file now starts with a UTF-8 byte-order mark and uses CRLF line endings, so it opens correctly in Excel. Parsers that do not expect the mark should strip it.
+- **`DOW-UAP-D193`:** war.gov's data file and description date the incident November 13, 1957, the date of the report. The report's date of information and both patrols' statements give November 3, 1957 (pages 3 to 6), now the `incident_date`, with a note.
+- **Downloads** now save as files (`Content-Disposition: attachment`). Copies that were also reachable under `/data/downloads/` now redirect to `/downloads/`.
+- **Citations:** `https://declassifieduap.org/r/<slug>?page=N` now opens the record at page N without JavaScript, and each record page has a suggested citation. The MCP server's `get_document_text` starts at the page in such an address, and `search_document_text` pages through long documents with `start_page`.
+
 ## 2026-11-24
 
 - **Code fix:** the Gemini 7 audio record was exported with the transcript's code, `NASA-UAP-D003`. It is now `NASA-UAP-D003A`, as war.gov and the record page give it, in the JSON, the CSV and the MCP server. Reported by a researcher using the bulk files; thank you.
