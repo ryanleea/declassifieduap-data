@@ -7,7 +7,7 @@ This repository is the front door to the data: the field dictionary, a sample, t
 <!-- stats:start -->
 - **521 records** from 8 releases (May 8, 2026 to November 20, 2026)
 - 338 PDFs, 137 videos, 30 images, 16 audio recordings
-- Catalog generated November 24, 2026
+- Catalog generated November 25, 2026
 <!-- stats:end -->
 
 ## The full data
