@@ -2,6 +2,13 @@
 
 Changes to the catalog, newest first: corrections this archive made, and changes war.gov made to its releases. Each corrected record also carries `corrected_by_archive` and `archive_note` in the data.
 
+## 2026-11-26
+
+- **Spain's Air Force UFO files.** 81 records, `ES-EA-001` to `ES-EA-081`: the Spanish Air Force's declassified files on sightings (1962 to 1995, the "Expedientes OVNI"), plus its UFO regulations of 1968 to 1985, from the Biblioteca Virtual de Defensa. They are not U.S. records and not part of PURSUE (`collection` is `es-ea`; PURSUE records are `pursue`). Their titles and text are in Spanish (`language`: `es`), with this archive's English machine translation beside them (`title_en`, `description_en`, and `text_en` on each page in the JSON Lines file; `translation_model` names the model). The translation is not official: quote the Spanish.
+- **Licence and credit for those 81 records:** the library publishes them under CC BY 4.0 (`licence`). Reuse must credit "Fuente: Biblioteca Central del Ejército del Aire y del Espacio / Biblioteca Virtual de Defensa" (`attribution`). The U.S. records are unchanged.
+- **New fields on every record:** `collection`, `language`, `source_record_url` (the library's catalogue record), `licence`, `attribution`, `declassification` and `file_numbers` (the Air Force's own file numbers), all null or empty for PURSUE records except `collection` and `language`.
+- **Pages withheld:** 16 pages in 5 Spanish files (`ES-EA-035`, `045`, `075`, `076`, `077`), mostly witness questionnaires that give a date of birth with the name blanked, read "[This page is withheld by Declassified UAP ...]" in place of their text, and those 5 files have no `file_url` here. The library's copy (`source_record_url`) has every page.
+
 ## 2026-11-25
 
 - **Machine summaries are back, checked.** Every summary was rewritten from its record's full text (or, for videos, images and empty scans, from war.gov's title and description only, which `machine_summary_basis` says), then checked claim by claim against the pages it cites. 487 records have one; 34 have none (`machine_summary` null) because no draft passed the check. A second, independent read of a sample found the remaining weak spots (audio heard wrong by speech recognition, hedges dropped in very long documents); those 40 summaries were checked again one by one against the pages, and 19 of them corrected, before release. A summary is still not government text: cite the document.
