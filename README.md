@@ -5,9 +5,10 @@ Catalog data for [Declassified UAP](https://declassifieduap.org), a searchable a
 This repository is the front door to the data: the field dictionary, a sample, the changelog of corrections, and examples. The full files come from the site with a free key.
 
 <!-- stats:start -->
-- **521 records** from 8 releases (May 8, 2026 to November 20, 2026)
+- **521 U.S. records** from 8 PURSUE releases (May 8, 2026 to November 20, 2026)
 - 338 PDFs, 137 videos, 30 images, 16 audio recordings
-- Catalog generated November 25, 2026
+- **81 files of Spain's Air Force** (Ejército del Aire, "Expedientes OVNI", collection `es-ea`, in Spanish), from the Biblioteca Virtual de Defensa under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any reuse of them must credit: "Fuente: Biblioteca Central del Ejército del Aire y del Espacio / Biblioteca Virtual de Defensa" (their `attribution` field). Their English titles and translations are machine translations, not official ones.
+- Catalog generated November 26, 2026
 <!-- stats:end -->
 
 ## The full data
